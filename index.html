@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+    <title>Portfolio</title>
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="images/portfolio.png">
@@ -162,12 +162,71 @@ section {
 }
 
 h1 {
-    font-size: 4.375rem;
-    line-height: 3.75rem;
+    font-size: 4.075rem;
+    line-height: 4.55rem;
     font-weight: 700;
-    color: var(--text-black);
+    color: Gray;
     margin-bottom: 1.25rem;
     font-family: var(--primary-font);
+}
+
+
+h1
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -525deg,
+    #155715 100%,
+    #FF5733 100%,
+    #ff1361 10%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 190% auto;
+  color: #fff;
+  background-clip: text;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 4.0rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 130% center;
+  }
+}
+
+ h1,h2 
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -525deg,
+    #231557 0%,
+    #2f075b 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 4.0rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 150% center;
+  }
 }
 
 h2 {
@@ -266,10 +325,10 @@ p {
 
 .header_wrapper .nav-item .nav-link {
     font-family: var(--primary-font);
-    font-size: 0.9375rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: var(--text-black);
+    color: var(--text-gray);
     display: inline-block;
     position: relative;
 }
@@ -278,9 +337,9 @@ p {
 .header_wrapper .nav-item .nav-link:hover {
     opacity: 1;
   
-    color: var(--primary-text);
+    color: var(--primary-text); 
     
-    /* -ms-text-underline-position: var(--bg-black); */
+    
 
 
 }
@@ -796,7 +855,7 @@ div{
                 <div class="col-lg-7 order-lg-1 order-2 banner-content">
                     <h2 class="text-uppercase position-relative">Hello</h2>
                     
-                    <h1 class="text-uppercase">I am Abhishek Pande!!</h1>
+                    <h1 class="text">I am Abhishek Pande!!</h1>
                     <h5 class="text-uppercase"> Software Engineer</h5>
                     
                     <div class="mt-5">
@@ -1203,7 +1262,7 @@ div{
         <div class="container">
             <div class="row align-items-center">
                 <div class="text-center services-title col-12">
-                    <h2 class="text-uppercase title-text" style="position: relative;">Education</h1>
+                    <h2 class="text-uppercase title-text" style="position: relative;">Education</h2>
                         <p>Educational Background</p>
                 </div>
                 <div class="col-12">
@@ -1226,7 +1285,7 @@ div{
                 </div>
             </div>
             <div class="name">
-                <h4><strong>School-HSC</strong></h4>
+                <h4 style=""><strong>School-HSC</strong></h4>
                 <p>June 2018-June 2019</p>
             </div>
             <div class="name1" style="display: inline-block;">
@@ -1237,8 +1296,8 @@ div{
         </div>
 
         <div class="name">
-             <h4 style="padding-left: 26%;"><strong>     School-SSC</strong></h4>
-            <p style="padding-left: 26%;">June 2016-June 2017</p>
+             <h4 style="padding-left: 17.5%;"><strong>School-SSC</strong></h4>
+            <p style="padding-left: 17.5%;">June 2016-June 2017</p>
         </div>
         <div class="name1" style="display: inline-block;">
             <h4>Swami Vivekanand Madhyamin Vidhayala, Hadgaon
@@ -1296,13 +1355,13 @@ div{
                         <p class="text-black"></p>
                        
          
-                        <form class="row g-3 justify-content-center mt-4">
+                        <form class="row g-3 justify-content-center mt-4" id="form1">
                             <div class="col col-sm-6 col-lg-4">
                                 <input type="email" id="email1" class="form-control"   class="text-black" placeholder="Email address">
                             </div>
                             
                             <div class="col col-auto">
-                                <button type="submit"  id="start" onclick="msg()" class="main-btn secondary-btn border-white mb-3" data-bs-target="#modalContactForm"  data-bs-toggle="modal">Get Started</button>
+                                <button type="submit"  id="start"  class="main-btn secondary-btn border-white mb-3" data-bs-target="#modalContactForm"  data-bs-toggle="modal" onclick="msg()">Get Started</button>
                                 
                             </div>
                         
@@ -1316,7 +1375,7 @@ div{
                             <div class="modal-dialog" role="document" id="model">
                                 <div class="modal-content">
                                     <div class="modal-header text-center">
-                                        <h4 class="modal-title w-100 font-weight-bold">Write to Me</h4>
+                                        <h4 class="modal-title w-100 font-weight-bold" style="color:gray">Write to Me</h4>
                                         <button type="button" class="close" data-bs-target="modal" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
                                          <span aria-hidden="true">&times;</span>
                                         </button>
@@ -1343,6 +1402,7 @@ div{
                                         <div class="md-form mb-5">
 
                                             <input type="text" id="sub" name="sub" class="form-control validate" placeholder="Enter Subject"  required>
+                                            
 
                                         </div>
 
@@ -1454,14 +1514,15 @@ div{
               
                 Swal.fire({
                          icon: "success",
-                         title: 'Message Successfully Send to Abhishek',
-                         text: 'Abhishek will connect with you!',
-                         timmer:2000000
+                         title: "Message Successfully Send to Abhishek",
+                         text: "Abhishek will connect with you!",
+                         
                      }).then(Ok=>{
                         
                         if(Ok)
                         {
-                            window.location.href='https://abhishekupportfolio.github.io/myportfoliocollege/#home';
+                            window.location.reload();
+                            
                         }
 
                      });
@@ -1597,16 +1658,22 @@ function msg() {
      var emails=$("#email1").val();
        
      if (emails=='' || emails==null) {
-        swal("Email required", "", "warning").then(OK=>{
+        swal("Email required", "", "warning").then((value)=>{
             
 
-            if(OK)
+            if(value==true)
             {
-                window.location.href='https://abhishekupportfolio.github.io/myportfoliocollege/#contact';
+                window.location.href='/#form1';
+                return false;
             }
+           
 
         });
         
+     }else{
+        // window.location.href='/#form';
+        // return true;
+        return false;
      }
     
 
