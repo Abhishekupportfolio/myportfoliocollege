@@ -80,9 +80,6 @@ body {
     background-repeat:no-repeat;
     background-color: var(--gradient);
     /* background-color:var(--bg-light); */
-    
-   
-    
     filter:alpha(opacity=40);
     height:100%;
     width:100%;
@@ -803,7 +800,7 @@ div{
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90" onload="welcome()">
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Navbar section -->
     <header class="header_wrapper">
@@ -1484,6 +1481,18 @@ div{
 
         <script>
 
+       function welcome() {
+            
+            
+               Swal.fire({
+              
+              icon: 'success',
+              title: 'Welcome to my Portfolio',
+              showConfirmButton: false,
+              text: 'Abhishek pande',
+              timer: 5000
+});
+         }
             function sendmail(){
 
 
@@ -1661,7 +1670,7 @@ function msg() {
 
             if(value==true)
             {
-                window.location.reload();
+                window.location.href='/#form1';
                 return false;
             }
            
@@ -1683,10 +1692,14 @@ function msg() {
     
   );
   
- 
+ </script>
 
-        </script>
-
+        
+        <div id="welcome"></div>
+    
+          
+         
+        
        
 </body>
 
